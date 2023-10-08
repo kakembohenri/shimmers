@@ -49,3 +49,17 @@
     margin:0;
 }
 
+.header-list{
+  list-style: none; 
+  display: flex;
+}
+
+.header-list > li{
+  display: flex;
+    align-items: center;
+}
+
+.header-list > li > a{
+  color: white;
+    font-size: 1.5rem;
+}

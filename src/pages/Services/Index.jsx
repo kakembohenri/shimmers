@@ -5,9 +5,12 @@ const Index = () => {
     const style2 = `#slcr_custom_heading_65197de838358{ font-size: 36px;line-height: 46px;text-align: left;  }`
     const style3 = `#slcr_custom_heading_65197de8385fb{ text-align: left;  }`
     const style4 = `#btn_slcr_65197de838ba4{ font-size: 13px;}  #btn_slcr_65197de838ba4:hover{ }`
+    const style5 = `a.service__box:hover, .css-i4bv87-MuiSvgIcon-root{
+        color: white;
+      }`
   return (
    <div className="main-component vc_row wpb_row vc_row-fluid content-dark data-bg-color-65197de837ca1 vc_custom_1556343092975 row-z-index-65197de837ca1">
-    <style></style>
+    <style>{style5}</style>
     <div className="wpb_column vc_column_container content-dark vc_col-sm-12 column-z-index-65197de837dd5">
         <div className="vc_column-inner ">
             <div className="wpb_wrapper">
@@ -36,7 +39,7 @@ const Index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="wpb_column vc_column_container vc_col-sm-3">
+                    {/* <div className="wpb_column vc_column_container vc_col-sm-3">
                         <div className="vc_column-inner">
                             <div className="wpb_wrapper">
                                 <style>{style4}</style>
@@ -47,14 +50,14 @@ const Index = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="vc_row wpb_row vc_inner vc_row-fluid">
                     <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6 vc_col-xs-12">
                         <div className="vc_column-inner">
                             <div className="wpb_wrapper"> 
                                 <a href="https://slashcreative.co/themes/moppers/services/residential-cleaning/" title="Residential Cleaning" className="service__box   slcr_custom_alert_css">
-                                    <div className="service__image lazy" data-bg="url(http://www.slashcreative.co/themes/moppers-version-2/wp-content/uploads/2019/12/moppers-service-1-1.jpg)" data-was-processed="true" style={{ backgroundImage: "url(&quot;http://www.slashcreative.co/themes/moppers-version-2/wp-content/uploads/2019/12/moppers-service-1-1.jpg&quot;);"}}>
+                                    <div className="service__image lazy" data-bg="url(http://www.slashcreative.co/themes/moppers-version-2/wp-content/uploads/2019/12/moppers-service-1-1.jpg)" data-was-processed="true" style={{ backgroundImage: "url(&quot;http://www.slashcreative.co/themes/moppers-version-2/wp-content/uploads/2019/12/moppers-service-1-1.jpg&quot;)"}}>
                                     </div>
                                     <div className="service__info">
                                         <h5>Residential Cleaning</h5>
