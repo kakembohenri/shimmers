@@ -1,6 +1,6 @@
 import { ExpandLessOutlined } from "@mui/icons-material"
 import Navbar from "./Navbar"
-import Footer from "../pages/Footer"
+import Footer from "../pages/Footer/Index"
 
 const Layout = ({children}) => {
 
