@@ -3,10 +3,10 @@ import { RouterProvider, createHashRouter } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  const LandingPage = React.lazy(() => import('../src/pages/LandingPage'))
-  const Service = React.lazy(() => import("../src/pages/Service"))
-  const Contacts = React.lazy(() => import("../src/pages/Contacts"))
-  const About = React.lazy(() => import("../src/pages/About"))
+  const LandingPage = React.lazy(() => import('../src/pages/LandingPage/Index'))
+  const Service = React.lazy(() => import("../src/pages/Service/Index"))
+  const Contacts = React.lazy(() => import("../src/pages/Contacts/Index"))
+  const About = React.lazy(() => import("../src/pages/About/Index"))
 
   const Loader = () => {
     return (
