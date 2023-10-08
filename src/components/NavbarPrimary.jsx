@@ -18,7 +18,7 @@ const NavbarPrimary = ({setIsMobile}) => {
         <div className="wrap">
             <div className="container">
                 <div className="nav__logo"> 
-                    <Link to="http://www.slashcreative.co/themes/moppers-version-2"> 
+                    <Link to="/"> 
                         {/* <noscript>
                             <img src="http://www.slashcreative.co/themes/moppers-version-2/wp-content/themes/moppers/assets/images/icons/slcr-logo-simple.svg" alt="logo" className="main__logo " />
                         </noscript>
@@ -41,12 +41,12 @@ const NavbarPrimary = ({setIsMobile}) => {
                     <nav className="nav__container hidden-xs hidden-sm custom-navbar">
                         <ul className="nav__list nav-list_alt">
                             <li id="menu-item-707" className="nav__item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown active menu-item-707 link__active">
-                                <Link to="#" className="mouseover__call">
+                                <Link to="/" className="mouseover__call">
                                     <span className="inner__item">Home </span>
                                 </Link>
                             </li>
                             <li id="menu-item-548" className="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-548 link__active">
-                                <Link to="http://www.slashcreative.co/themes/moppers-version-2/about/" className="mouseover__call">
+                                <Link to="/about" className="mouseover__call">
                                     <span className="inner__item">About</span>
                                 </Link>
                             </li>
@@ -60,39 +60,39 @@ const NavbarPrimary = ({setIsMobile}) => {
                                 </Link>
                                 <ul className={isDropDownVisible ? "submenu__dropdown child depth_0 active":"submenu__dropdown child depth_0"}>
                                     <li id="menu-item-547" className=" dropdown__item  menu-item menu-item-type-post_type menu-item-object-page menu-item-547">
-                                        <Link to="http://www.slashcreative.co/themes/moppers-version-2/services/" className="child__hover">All Services</Link>
+                                        <Link to="/services/all" className="child__hover">All Services</Link>
                                     </li>
                                     <li id="menu-item-554" className=" dropdown__item  menu-item menu-item-type-post_type menu-item-object-page menu-item-554">
-                                        <Link to="http://www.slashcreative.co/themes/moppers-version-2/services/residential-cleaning/" className="child__hover">Residential Cleaning</Link>
+                                        <Link to="/services/residential-cleaning" className="child__hover">Residential Cleaning</Link>
                                     </li>
                                     <li id="menu-item-552" className=" dropdown__item  menu-item menu-item-type-post_type menu-item-object-page menu-item-552">
-                                        <Link to="http://www.slashcreative.co/themes/moppers-version-2/services/commercial-cleaning/" className="child__hover">Commercial Cleaning</Link>
+                                        <Link to="/services/commercial-cleaning" className="child__hover">Commercial Cleaning</Link>
                                     </li>
                                     <li id="menu-item-553" className=" dropdown__item  menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
-                                        <Link to="http://www.slashcreative.co/themes/moppers-version-2/services/construction-cleaning/" className="child__hover">Construction Cleaning</Link>
+                                        <Link to="/services/construction-cleaning" className="child__hover">Construction Cleaning</Link>
                                     </li>
                                     <li id="menu-item-551" className=" dropdown__item  menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
-                                        <Link to="http://www.slashcreative.co/themes/moppers-version-2/services/windows-cleaning/" className="child__hover">Windows Cleaning</Link>
+                                        <Link to="/services/windows-cleaning" className="child__hover">Windows Cleaning</Link>
                                     </li>
                                     <li id="menu-item-550" className=" dropdown__item  menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
-                                        <Link to="http://www.slashcreative.co/themes/moppers-version-2/services/carpet-cleaning/" className="child__hover">Carpet Cleaning</Link>
+                                        <Link to="/services/carpet-cleaning" className="child__hover">Carpet Cleaning</Link>
                                     </li>
                                     <li id="menu-item-549" className=" dropdown__item  menu-item menu-item-type-post_type menu-item-object-page menu-item-549">
-                                        <Link to="http://www.slashcreative.co/themes/moppers-version-2/services/furniture-cleaning/" className="child__hover">Furniture Cleaning</Link>
+                                        <Link to="/services/furniture-cleaning" className="child__hover">Furniture Cleaning</Link>
                                 </li>
                             </ul>
                         </li>
-                        <li id="menu-item-545" className="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-545 link__active">
+                        {/* <li id="menu-item-545" className="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-545 link__active">
                             <Link to="http://www.slashcreative.co/themes/moppers-version-2/pricing/" className="mouseover__call">
                                 <span className="inner__item">Pricing</span>
                             </Link>
-                        </li>
-                        <li id="menu-item-559" className="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-559 link__active">
+                        </li> */}
+                        {/* <li id="menu-item-559" className="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-559 link__active">
                             <Link to="http://www.slashcreative.co/themes/moppers-version-2/blog/" className="mouseover__call"><span className="inner__item">Blog</span>
                             </Link>
-                        </li>
+                        </li> */}
                         <li id="menu-item-546" className="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-546 link__active">
-                            <Link to="http://www.slashcreative.co/themes/moppers-version-2/contact/" className="mouseover__call"><span className="inner__item">Contact</span></Link>
+                            <Link to="/contacts" className="mouseover__call"><span className="inner__item">Contact</span></Link>
                         </li>
                     </ul>
                     </nav>

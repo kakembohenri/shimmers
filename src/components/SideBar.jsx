@@ -1,5 +1,6 @@
-import { CloseOutlined, ExpandLessOutlined, ExpandMore, ExpandMoreOutlined } from "@mui/icons-material"
+import { CloseOutlined, ExpandLessOutlined, ExpandMore, ExpandMoreOutlined, AccessTimeOutlined, Facebook, Instagram, MailOutlineOutlined, PhoneOutlined, Twitter, WatchOutlined } from "@mui/icons-material"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const SideBar = ({setIsMobile}) => {
     // className={isMobile ? 'nav__mobile in-action':'nav__mobile' }
@@ -13,10 +14,10 @@ const SideBar = ({setIsMobile}) => {
         <div className="nav__module_side">
             <ul className="nav__mobile_list">
                 <li id="mobile-menu-item-707" className="nav__mobile_item  parent__menu ">
-                    <a href="#" className="" >Home </a>
+                    <Link to="#" className="" >Home </Link>
                 </li>
                 <li id="mobile-menu-item-548" className="nav__mobile_item  parent__menu ">
-                    <a title="About" href="http://www.slashcreative.co/themes/moppers-version-2/about/">About</a>
+                    <Link to="/about">About</Link>
                 </li>
                 <li id="mobile-menu-item-9" className="nav__mobile_item  parent__menu ">
                     <a title="Services" href="#" className="" data-toggle="dropdown">
@@ -30,34 +31,28 @@ const SideBar = ({setIsMobile}) => {
                     {showOptions && (
                         <ul className="nav__mobile_list  sub-menu child   depth_0 open-submenu">
                             <li id="mobile-menu-item-547" className="nav__mobile_item ">
-                                <a title="All Services" href="http://www.slashcreative.co/themes/moppers-version-2/services/">All Services</a>
+                                <Link to="/services/all">All Services</Link>
                             </li>
                             <li id="mobile-menu-item-554" className="nav__mobile_item ">
-                                <a title="Residential Cleaning" href="http://www.slashcreative.co/themes/moppers-version-2/services/residential-cleaning/">Residential Cleaning</a>
+                                <Link to="/services/residential-cleaning">Residential Cleaning</Link>
                             </li>
                             <li id="mobile-menu-item-552" className="nav__mobile_item ">
-                                <a title="Commercial Cleaning" href="http://www.slashcreative.co/themes/moppers-version-2/services/commercial-cleaning/">Commercial Cleaning</a>
+                                <Link to="/services/commercial-cleaning">Commercial Cleaning</Link>
                             </li>
                             <li id="mobile-menu-item-553" className="nav__mobile_item ">
-                                <a title="Construction Cleaning" href="http://www.slashcreative.co/themes/moppers-version-2/services/construction-cleaning/">Construction Cleaning</a>
+                                <Link to="/services/construction-cleaning">Construction Cleaning</Link>
                             </li>
                             <li id="mobile-menu-item-551" className="nav__mobile_item ">
-                                <a title="Windows Cleaning" href="http://www.slashcreative.co/themes/moppers-version-2/services/windows-cleaning/">Windows Cleaning</a>
+                                <Link to="/services/windows-cleaning">Windows Cleaning</Link>
                             </li>
                             <li id="mobile-menu-item-550" className="nav__mobile_item ">
-                                <a title="Carpet Cleaning" href="http://www.slashcreative.co/themes/moppers-version-2/services/carpet-cleaning/">Carpet Cleaning</a>
+                                <Link to="/services/carpet-cleaning">Carpet Cleaning</Link>
                             </li>
                             <li id="mobile-menu-item-549" className="nav__mobile_item ">
-                                <a title="Furniture Cleaning" href="http://www.slashcreative.co/themes/moppers-version-2/services/furniture-cleaning/">Furniture Cleaning</a>
+                                <Link to="/services/furniture-cleaning">Furniture Cleaning</Link>
                             </li>
                         </ul>
                     )}
-                </li>
-                <li id="mobile-menu-item-545" className="nav__mobile_item  parent__menu ">
-                    <a title="Pricing" href="http://www.slashcreative.co/themes/moppers-version-2/pricing/">Pricing</a>
-                </li>
-                <li id="mobile-menu-item-559" className="nav__mobile_item  parent__menu ">
-                    <a title="Blog" href="http://www.slashcreative.co/themes/moppers-version-2/blog/">Blog</a>
                 </li>
                 <li id="mobile-menu-item-546" className="nav__mobile_item  parent__menu ">
                     <a title="Contact" href="http://www.slashcreative.co/themes/moppers-version-2/contact/">Contact</a>
@@ -68,13 +63,13 @@ const SideBar = ({setIsMobile}) => {
             <div className="text__mob_side">
                 <ul className="top-bar-content">
                     <li>
-                        <i className="icon icon_phone"></i>+ (123) 1800-567-8990
+                        <PhoneOutlined fontSize="large" />+ (123) 1800-567-8990
                     </li>
                     <li>
-                        <i className="icon icon_clock"></i>Mon - Fri: 9:00 - 19:00 / Closed on Weekends
+                        <AccessTimeOutlined fontSize="large" />Mon - Fri: 9:00 - 19:00 / Closed on Weekends
                     </li>
                     <li>
-                        <i className="icon icon_mail"></i>office@example.com
+                        <MailOutlineOutlined fontSize="large" />office@example.com
                     </li>
                 </ul>
             </div>
@@ -82,24 +77,19 @@ const SideBar = ({setIsMobile}) => {
         <div className="nav__module_side social">
             <ul className="social__side_mob">
                 <li> 
-                    <a href="#" target="_blank">
-                        <i className="socicon-facebook"></i>
-                    </a>
+                    <Link to="#" target="_blank">
+                        <Facebook fontSize="large" />
+                    </Link>
                 </li>
                 <li> 
-                    <a href="#" target="_blank">
-                        <i className="socicon-twitter"></i>
-                    </a>
+                    <Link to="#" target="_blank">
+                        <Twitter fontSize="large" />
+                    </Link>
                 </li>
                 <li> 
-                    <a href="#" target="_blank">
-                        <i className="socicon-instagram"></i>
-                    </a>
-                </li>
-                <li> 
-                    <a href="#" target="_blank">
-                        <i className="socicon-houzz"></i>
-                    </a>
+                    <Link to="#" target="_blank">
+                        <Instagram fontSize="large" />
+                    </Link>
                 </li>
             </ul>
         </div>

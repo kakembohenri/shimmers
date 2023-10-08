@@ -4,6 +4,9 @@ import './App.css'
 
 function App() {
   const LandingPage = React.lazy(() => import('../src/pages/LandingPage'))
+  const Service = React.lazy(() => import("../src/pages/Service"))
+  const Contacts = React.lazy(() => import("../src/pages/Contacts"))
+  const About = React.lazy(() => import("../src/pages/About"))
 
   const Loader = () => {
     return (
@@ -19,7 +22,19 @@ function App() {
     {
       path:'/',
       element:<LandingPage />
-    }
+    },
+    {
+      path:'/services/:name',
+      element:<Service />
+    },
+    {
+      path:'/contacts',
+      element:<Contacts />
+    },
+    {
+      path:'/about',
+      element:<About />
+    },
   ])
 
   return (

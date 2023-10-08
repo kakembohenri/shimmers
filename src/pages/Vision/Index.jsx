@@ -90,9 +90,6 @@ const Vision = () => {
                 <p id="slcr_custom_heading_65105bf86c65d" className="vc_custom_heading vc_custom_1555947929938 font-400">To build stronger, cleaner, and more prosperous neighborhoods.
                 </p>
                 <div className="text_link_wrap  text-underline font-600" data-display-type="inline"> 
-                <a href="#" title="Learn more about company" className="text_link" data-link-hover="underline" data-icon-effect=""> 
-                <span className="inner-link slcr_custom_textlink_inner_65105bf86c68e"> Learn more about company</span> 
-                </a>
             </div>
         </div>
     </div>
