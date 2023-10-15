@@ -1,4 +1,5 @@
-import mission from "../../assets/images/mission.png"
+import { Box } from "@mui/material"
+import mission from "../../assets/images/satisfied.png"
 
 const Mission = () => {
 
@@ -8,10 +9,10 @@ const Mission = () => {
     const style4 = `#slcr_custom_heading_65105bf86c65d{ text-align: left;  }`
     const style5 = `#slcr_custom_heading_65105bf86cbeb{ line-height: 1;text-align: center;  }`
   return (
-    <div className="main-component vc_row wpb_row vc_row-fluid content-dark data-bg-color-65105bf86c0d2 vc_custom_1556211578092 row-z-index-65105bf86c0d2">
+    <Box sx={{ flexDirection: {lg: 'row',md: 'column', sm: 'column', xs: 'column'}}} className="main-component flex-container vc_row wpb_row vc_row-fluid content-dark data-bg-color-65105bf86c0d2 vc_custom_1556211578092 row-z-index-65105bf86c0d2">
         <style>{style1}</style>
         <style></style>
-        <div className="wpb_column vc_column_container content-dark vc_col-sm-6 column-z-index-65105bf86c1d8">
+        <Box sx={{ width:{md: '100%', sm: '100%', xs:'100%'} }} className="wpb_column vc_column_container content-dark vc_col-sm-6 column-z-index-65105bf86c1d8">
             <div className="vc_column-inner vc_custom_1555946720709">
                 <div className="wpb_wrapper">
                     <style>{style2}</style>
@@ -25,7 +26,7 @@ const Mission = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </Box>
     <style></style>
     <div className="wpb_column vc_column_container content-dark vc_col-sm-1 column-z-index-65105bf86c74d">
         <div className="vc_column-inner ">
@@ -34,7 +35,7 @@ const Mission = () => {
     </div>
     {/* <style>.slcr_box_image_css_65105bf86ca52{   }</style> */}
     <style></style>
-    <div className="wpb_column vc_column_container content-dark vc_col-sm-5 column-z-index-65105bf86c80d">
+    <Box sx={{ width:{lg: '45%', md: '100%', sm: '100%', xs:'100%'} }} className="wpb_column vc_column_container content-dark vc_col-sm-5 column-z-index-65105bf86c80d">
         <div className="vc_column-inner ">
             <div className="wpb_wrapper">
                 <div className="vc_empty_space  visible-xs" style={{height: "165px"}}>
@@ -92,11 +93,11 @@ const Mission = () => {
                         </div>
                     </div>
                 </div> */}
-                {/* <img src={mission} alt='Mission' /> */}
+                <img className="landing-page-img" src={mission} alt='Mission' />
             </div>
         </div>
-    </div>
-    </div>
+    </Box>
+    </Box>
   )
 }
 export default Mission

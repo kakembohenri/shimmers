@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .intro{
   margin:0 !important;
   background-image: url("../src/assets/images/test.jpg") !important;
@@ -47,6 +52,15 @@
     padding-left: 89.5px;
     padding-right: 89.5px;
     margin:0;
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+
+.landing-page-img{
+  height: 37rem;
 }
 
 .header-list{

@@ -1,3 +1,6 @@
+import { BoltOutlined, CommitOutlined, RecyclingOutlined, ThumbUpOffAltOutlined } from "@mui/icons-material"
+import final from "../../assets/images/final.jpg"
+
 const Index = () => {
     const style1 = `.slcr_custom_textlink_inner_65197de83c7ce{  font-size: 15px !important; }`
     const style2 = `#slcr_custom_heading_65197de83c4d9{ font-size: 13px;text-align: left;  letter-spacing: 1px; }`
@@ -7,7 +10,15 @@ const Index = () => {
     const style6 = `#slcr_icon_text_last65197de83cd42.main__icon { display: block; text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #fba311 !important; background: #fba311 !important;  height: 50px; width: 50px; line-height: 50px; font-size: 25px; transition: all ease .3s; -webkit-transition: all ease .3s; } [data-hover-target="box"]:hover #slcr_icon_text_last65197de83cd42.main__icon, [data-hover-target="icon"] #slcr_icon_text_last65197de83cd42.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; } #slcr_icon_text_content65197de83cd42{  } #slcr_icon_text_img65197de83cd42{  height: auto; width: 60px;   border-radius: 0px;  }`
     const style7 = `#slcr_icon_text_last65197de83cfa9.main__icon { display: block; text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #fba311 !important; background: #fba311 !important;  height: 50px; width: 50px; line-height: 50px; font-size: 25px; transition: all ease .3s; -webkit-transition: all ease .3s; } [data-hover-target="box"]:hover #slcr_icon_text_last65197de83cfa9.main__icon, [data-hover-target="icon"] #slcr_icon_text_last65197de83cfa9.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; } #slcr_icon_text_content65197de83cfa9{  } #slcr_icon_text_img65197de83cfa9{  height: auto; width: 60px;   border-radius: 0px;  }`
     const style8 = `#slcr_icon_text_last65197de83d146.main__icon { display: block; text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #fba311 !important; background: #fba311 !important;  height: 50px; width: 50px; line-height: 50px; font-size: 25px; transition: all ease .3s; -webkit-transition: all ease .3s; } [data-hover-target="box"]:hover #slcr_icon_text_last65197de83d146.main__icon, [data-hover-target="icon"] #slcr_icon_text_last65197de83d146.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; } #slcr_icon_text_content65197de83d146{  } #slcr_icon_text_img65197de83d146{  height: auto; width: 60px;   border-radius: 0px;  }`
-
+    const style9 = `
+    .custom-final{
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+}
+    `
     // // icons styles
     // const iconStyles = `.icon-wiping-sprayer-tool:before {
     //     content: "\e90a";
@@ -15,6 +26,7 @@ const Index = () => {
   return (
     <div className="main-component vc_row wpb_row vc_row-fluid content-dark data-bg-color-65197de83c184 vc_custom_1556174028433 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex row-z-index-65197de83c184">
         <style>{style1}</style>
+        <style>{style9}</style>
         {/* <style>{iconStyles}</style> */}
         <div className="wpb_column vc_column_container content-dark vc_col-sm-6 column-z-index-65197de83c2b8">
             <div className="vc_column-inner vc_custom_1556202434624">
@@ -38,7 +50,8 @@ const Index = () => {
                                     <div className="icons__text   " data-icon-align="left" data-reset-responsive="false" data-hover-target="box" data-vertical-align="top">
                                         <div className="icons_wrap">
                                             <div className="icon__container"> 
-                                                <i className="main__icon icon-wiping-gloves-black-pair" id="slcr_icon_text_last65197de83cb2a"></i>
+                                                {/* <i className="main__icon icon-wiping-gloves-black-pair" id="slcr_icon_text_last65197de83cb2a"></i> */}
+                                                <CommitOutlined sx={{ padding: '1rem' }} className="main__icon" id="slcr_icon_text_last65197de83cb2a" />
                                             </div>
                                         </div>
                                         <div className="text__content" id="slcr_icon_text_content65197de83cb2a">
@@ -57,7 +70,8 @@ const Index = () => {
                                     <div className="icons__text   " data-icon-align="left" data-reset-responsive="false" data-hover-target="box" data-vertical-align="top">
                                         <div className="icons_wrap">
                                             <div className="icon__container"> 
-                                                <i className="main__icon icon-wiping-sprayer-tool" id="slcr_icon_text_last65197de83cd42"></i>
+                                                {/* <i className="main__icon icon-wiping-sprayer-tool" id="slcr_icon_text_last65197de83cd42"></i> */}
+                                                <RecyclingOutlined sx={{ padding: '1rem' }} className="main__icon" id="slcr_icon_text_last65197de83cd42" />
                                             </div>
                                         </div>
                                         <div className="text__content" id="slcr_icon_text_content65197de83cd42">
@@ -77,7 +91,8 @@ const Index = () => {
                                     <div className="icons__text   " data-icon-align="left" data-reset-responsive="false" data-hover-target="box" data-vertical-align="top">
                                         <div className="icons_wrap">
                                             <div className="icon__container"> 
-                                                <i className="main__icon icon-wiping-brush" id="slcr_icon_text_last65197de83cfa9"></i>
+                                                {/* <i className="main__icon icon-wiping-brush" id="slcr_icon_text_last65197de83cfa9"></i> */}
+                                                <BoltOutlined sx={{ padding: '1rem' }} className="main__icon" id="slcr_icon_text_last65197de83cfa9" />
                                             </div>
                                         </div>
                                         <div className="text__content" id="slcr_icon_text_content65197de83cfa9">
@@ -95,7 +110,8 @@ const Index = () => {
                                     <div className="icons__text   " data-icon-align="left" data-reset-responsive="false" data-hover-target="box" data-vertical-align="top">
                                         <div className="icons_wrap">
                                             <div className="icon__container"> 
-                                                <i className="main__icon icon-wiping-vacuum-tool" id="slcr_icon_text_last65197de83d146"></i>
+                                                {/* <i className="main__icon icon-wiping-vacuum-tool" id="slcr_icon_text_last65197de83d146"></i> */}
+                                                <ThumbUpOffAltOutlined sx={{ padding: '1rem' }} className="main__icon" id="slcr_icon_text_last65197de83d146" />
                                             </div>
                                         </div>
                                         <div className="text__content" id="slcr_icon_text_content65197de83d146">
@@ -118,7 +134,7 @@ const Index = () => {
         </div>
         <style></style>
         <div className="dotted-pattern-2 position-1 wpb_column vc_column_container content-dark vc_col-sm-6 vc_col-lg-5 vc_col-md-6 vc_col-xs-12 vc_col-has-fill column-z-index-65197de83d350">
-            <div className="vc_column-inner vc_custom_1639235980356">
+            <div className="vc_column-inner custom-final" style={{ backgroundImage: `url(${final})` }}>
                 <div className="wpb_wrapper"></div>
             </div>
         </div>
