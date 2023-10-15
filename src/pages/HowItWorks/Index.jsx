@@ -1,3 +1,6 @@
+import { CenterFocusStrongOutlined, LockOutlined, PeopleOutline, RecyclingOutlined, StarOutline } from "@mui/icons-material"
+import excellence from "../../assets/images/excellence.svg"
+
 const HowItWorks = () => {
     const style1 = `#slcr_custom_heading_65105bf8707e2{ font-size: 13px;text-align: left;  letter-spacing: 1px; }`
     const style2 = `#slcr_custom_heading_65105bf870995{ font-size: 36px;line-height: 46px;text-align: center;  }`
@@ -24,7 +27,8 @@ const HowItWorks = () => {
                                     <style>{style1}</style>
                                     <h6 id="slcr_custom_heading_65105bf8707e2" className="vc_custom_heading sub-heading center font-700">Our core values</h6>
                                     <style>{style2}</style>
-                                    <h2 id="slcr_custom_heading_65105bf870995" className="vc_custom_heading vc_custom_1556213742865 font-600"><br /> in 3 simple steps</h2>
+                                    <h2 id="slcr_custom_heading_65105bf870995" className="vc_custom_heading vc_custom_1556213742865 font-600"><br /> </h2>
+                                    {/* in 3 simple steps */}
                                 </div>
                             </div>
                         </div>
@@ -35,7 +39,9 @@ const HowItWorks = () => {
                             <div className="vc_column-inner">
                                 <div className="">
                                     <div className="icon__container vc_custom_1556173531552  " data-icon-align="center" data-hover-target="icon"> 
-                                    <i className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66"></i>
+                                    {/* <i className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66">
+                                    </i> */}
+                                    <StarOutline className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66" sx={{ padding: '1rem' }} />
                                 </div>
                                 <style>{style4}</style>
                                 <h4 id="slcr_custom_heading_65105bf870dd8" className="vc_custom_heading font-600">Excellence</h4>
@@ -52,7 +58,8 @@ const HowItWorks = () => {
                             <div className="vc_column-inner">
                                 <div className="">
                                     <div className="icon__container vc_custom_1556005556725  " data-icon-align="center" data-hover-target="icon"> 
-                                    <i className="main__icon fa fa-calendar" id="slcr_icon_last65105bf8710eb"></i>
+                                    {/* <i className="main__icon fa fa-calendar" id="slcr_icon_last65105bf8710eb"></i> */}
+                                    <CenterFocusStrongOutlined className="main__icon fa fa-calendar" id="slcr_icon_last65105bf8710eb" sx={{ padding: '1rem' }} />
                                     </div>
                                     <style>{style7}</style>
                                     <h4 id="slcr_custom_heading_65105bf871231" className="vc_custom_heading font-600">Customer-Centric Focus</h4>
@@ -68,7 +75,9 @@ const HowItWorks = () => {
                         <div className="step-3 wpb_column vc_column_container vc_col-sm-4">
                             <div className="vc_column-inner">
                                 <div className="">
-                                    <div className="icon__container vc_custom_1556001630671  " data-icon-align="center" data-hover-target="icon"> <i className="main__icon icon-leaves" id="slcr_icon_last65105bf871510"></i>
+                                    <div className="icon__container vc_custom_1556001630671  " data-icon-align="center" data-hover-target="icon"> 
+                                        {/* <i className="main__icon icon-leaves" id="slcr_icon_last65105bf871510"></i> */}
+                                        <LockOutlined className="main__icon icon-leaves" id="slcr_icon_last65105bf871510" sx={{ padding: '1rem' }} />
                                     </div>
                                     <style>{style10}</style>
                                     <h4 id="slcr_custom_heading_65105bf871644" className="vc_custom_heading font-600">Integrity</h4>
@@ -85,7 +94,8 @@ const HowItWorks = () => {
                             <div className="vc_column-inner">
                                 <div className="">
                                     <div className="icon__container vc_custom_1556173531552  " data-icon-align="center" data-hover-target="icon"> 
-                                    <i className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66"></i>
+                                    {/* <i className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66"></i> */}
+                                    <RecyclingOutlined className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66" sx={{ padding: '1rem' }} />
                                 </div>
                                 <style>{style4}</style>
                                 <h4 id="slcr_custom_heading_65105bf870dd8" className="vc_custom_heading font-600">Environmental Responsibility</h4>
@@ -101,7 +111,8 @@ const HowItWorks = () => {
                             <div className="vc_column-inner">
                                 <div className="">
                                     <div className="icon__container vc_custom_1556173531552  " data-icon-align="center" data-hover-target="icon"> 
-                                    <i className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66"></i>
+                                    {/* <i className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66"></i> */}
+                                    <PeopleOutline className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66" sx={{ padding: '1rem' }} />
                                 </div>
                                 <style>{style4}</style>
                                 <h4 id="slcr_custom_heading_65105bf870dd8" className="vc_custom_heading font-600">Community Engagement</h4>

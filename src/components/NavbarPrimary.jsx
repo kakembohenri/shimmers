@@ -14,7 +14,7 @@ const NavbarPrimary = ({setIsMobile}) => {
         setIsDropDownVisible(false)
     }
   return (
-    <div className="header__primary ">
+    <div className="header__primary " id="back">
         <div className="wrap">
             <div className="container">
                 <div className="nav__logo"> 
@@ -41,7 +41,7 @@ const NavbarPrimary = ({setIsMobile}) => {
                     <nav className="nav__container hidden-xs hidden-sm custom-navbar">
                         <ul className="nav__list nav-list_alt">
                             <li id="menu-item-707" className="nav__item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown active menu-item-707 link__active">
-                                <Link to="/" className="mouseover__call">
+                                <Link to="/home" className="mouseover__call">
                                     <span className="inner__item">Home </span>
                                 </Link>
                             </li>

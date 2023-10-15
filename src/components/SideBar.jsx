@@ -63,13 +63,13 @@ const SideBar = ({setIsMobile}) => {
             <div className="text__mob_side">
                 <ul className="top-bar-content">
                     <li>
-                        <PhoneOutlined fontSize="large" />+ (123) 1800-567-8990
+                        <PhoneOutlined fontSize="large" />+(256) 743 363 774
                     </li>
                     <li>
                         <AccessTimeOutlined fontSize="large" />Mon - Fri: 9:00 - 19:00 / Closed on Weekends
                     </li>
                     <li>
-                        <MailOutlineOutlined fontSize="large" />office@example.com
+                        <MailOutlineOutlined fontSize="large" />Shimahub95@gmail.com
                     </li>
                 </ul>
             </div>

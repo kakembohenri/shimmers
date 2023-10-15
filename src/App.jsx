@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { RouterProvider, createHashRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter, Navigate } from 'react-router-dom'
 import './App.css'
 
 function App() {
@@ -21,6 +21,10 @@ function App() {
   const router = createHashRouter([
     {
       path:'/',
+      element:<Navigate to='/home' />
+    },
+    {
+      path:'/home',
       element:<LandingPage />
     },
     {

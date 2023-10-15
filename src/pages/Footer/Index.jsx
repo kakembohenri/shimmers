@@ -1,5 +1,6 @@
 import {FacebookOutlined, Instagram, Twitter } from "@mui/icons-material"
 import { Link } from "react-router-dom"
+import logo from "../../assets/images/logo.jpg"
 
 const Index = () => {
   return (
@@ -9,15 +10,13 @@ const Index = () => {
                 <div className="widget__area">
                     <div className="widget__wrap">
                         <div className="footer__logo"> 
-                            <noscript>
+                            {/* <noscript>
                                 <img src="http://www.slashcreative.co/themes/moppers-version-2/wp-content/themes/moppers/assets/images/icons/slcr-logo-footer.svg" alt="logo" />
-                            </noscript>
-                            <img className=" lazyloaded" src="http://www.slashcreative.co/themes/moppers-version-2/wp-content/themes/moppers/assets/images/icons/slcr-logo-footer.svg" data-src="http://www.slashcreative.co/themes/moppers-version-2/wp-content/themes/moppers/assets/images/icons/slcr-logo-footer.svg" alt="logo" />
+                            </noscript> */}
+                            <img className=" lazyloaded" src={logo} alt="logo" />
                         </div>
                         <div className="footer__desc">
-                            <p>We are professional cleaning company founded 
-                                in 1997 and providing leading commercial and 
-                                residential cleaning solutions in the U.S. <br /><br /> Mail : info@moppers.com<br /> Call : +1 972 500 4545
+                            <p>What is shimma hub <br /><br /> Mail : Shimahub95@gmail.com<br /> Call : 0743 363 774
                             </p>
                         </div>
                         <ul className="footer__social">
@@ -96,7 +95,7 @@ const Index = () => {
         <div className="footer__bottom">
             <div className="container">
                 <div className="copyright__text"> 
-                    © {new Date().getFullYear()} Shimma Hub. All Right Reserved.
+                    © {new Date().getFullYear()} Shimma Hub. All Rights Reserved.
                 </div>
             </div>
         </div>
