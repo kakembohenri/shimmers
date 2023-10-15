@@ -1,4 +1,4 @@
-import Svg from "./SVG"
+import Svg from "./Svg"
 
 const BriefIntro = () => {
 
