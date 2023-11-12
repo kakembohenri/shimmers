@@ -1,9 +1,34 @@
-import { AccessTimeOutlined, Facebook, Instagram, MailOutlineOutlined, PhoneOutlined, Twitter, WatchOutlined } from "@mui/icons-material"
+import { AccessTimeOutlined, Facebook, Instagram, LinkedIn, MailOutlineOutlined, PhoneOutlined, Twitter, WatchOutlined } from "@mui/icons-material"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 const NavbarSecondary = () => {
+
+    const [show, setShow] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener("scroll", getHeight)
+        return () => window.removeEventListener("scroll", getHeight)
+    })
+
+    const getHeight = () => {
+        let height = window.scrollY
+
+        if(height > 200){
+            setShow(true)
+        }else{
+            setShow(false)
+        }
+    }
+
+    const active = {
+        background: "#a3c1ad",
+        borderBottom: "#a3c1ad",
+        position: "fixed",
+        zIndex: "1000"
+    }
   return (
-    <div className="header__secondary hidden-xs hidden-sm">
+    <div className="header__secondary hidden-xs hidden-sm" style={ show ? active: {background:"#a3c1ad", borderBottom:"#a3c1ad" }}>
         <style>{`
         .link-secondary{
             display: flex !important;
@@ -17,13 +42,13 @@ const NavbarSecondary = () => {
                             <div className="inner__wrap text__block">
                                 <div className="top__content">
                                     <ul style={{ display: 'flex' }} className="top-bar-content">
-                                        <li className="link-secondary">
+                                        <li className="link-secondary" style={{ color:"#49796b" }}>
                                             <PhoneOutlined fontSize="large" /> +(256) 743 363 774
                                         </li>
-                                        <li className="link-secondary">
+                                        <li className="link-secondary" style={{ color:"#49796b" }}>
                                             <AccessTimeOutlined fontSize="large" /> Mon - Fri: 9:00 - 19:00 / Closed on Weekends
                                         </li>
-                                        <li className="link-secondary">
+                                        <li className="link-secondary" style={{ color:"#49796b" }}>
                                             <MailOutlineOutlined fontSize="large" /> Shimahub95@gmail.com
                                         </li>
                                     </ul>
@@ -38,17 +63,22 @@ const NavbarSecondary = () => {
                                 <ul className="secondary__social">
                                     <li> 
                                         <Link to="#" target="_blank">
-                                            <Facebook fontSize="large" />
+                                            <Facebook fontSize="large" style={{ color:"#1877F2" }} />
                                         </Link>
                                     </li>
                                     <li> 
                                         <Link to="#" target="_blank">
-                                            <Twitter fontSize="large" />
+                                            <Twitter fontSize="large" style={{ color:" #1DA1F2" }} />
                                         </Link>
                                     </li>
                                     <li> 
                                         <Link to="#" target="_blank">
-                                            <Instagram fontSize="large" />
+                                            <Instagram fontSize="large" style={{ /*background:"linear-gradient(to bottom, #833ab4, #fd1d1d, #fd1d8e)"*/ color:"rgb(253, 29, 142)" }} />
+                                        </Link>
+                                    </li>
+                                    <li> 
+                                        <Link to="#" target="_blank">
+                                            <LinkedIn fontSize="large" style={{ /*background:"linear-gradient(to bottom, #833ab4, #fd1d1d, #fd1d8e)"*/ color:"#0077B5" }} />
                                         </Link>
                                     </li>
                                     

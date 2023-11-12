@@ -1,11 +1,17 @@
-import {FacebookOutlined, Instagram, Twitter } from "@mui/icons-material"
+import {Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material"
 import { Link } from "react-router-dom"
 import logo from "../../assets/images/logo.jpg"
 
 const Index = () => {
+    const style=`.special_color{
+        background-color: #a3c1ad !important;
+    }`
   return (
     <footer className="footer__cont slcr-sidebar col__4 col__alternate " data-footer-layout="first" data-widget-align="center" data-social-location="default" data-bg-overlay="0" data-footer-scheme="dark">
-        <div className="footer__main">
+        <style>
+            {style}
+        </style>
+        <div className="footer__main special_color">
             <div className="container no-padding">
                 <div className="widget__area">
                     <div className="widget__wrap">
@@ -22,18 +28,23 @@ const Index = () => {
                         <ul className="footer__social">
                             <li> 
                                 <a href="#" target="_blank">
-                                <FacebookOutlined />
+                                <Facebook fontSize="large" style={{ color:"#1877F2" }} />
                                 </a>
                             </li>
                             <li> 
                                 <a href="#" target="_blank">
-                                    <Twitter />
+                                    <Twitter fontSize="large"  style={{ color:" #1DA1F2" }}/>
                                 </a>
                             </li>
                             <li> 
                                 <a href="#" target="_blank">
-                                    <Instagram />
+                                    <Instagram fontSize="large" style={{ color:"rgb(253, 29, 142)" }} />
                                 </a>
+                            </li>
+                            <li> 
+                                <Link to="#" target="_blank">
+                                    <LinkedIn fontSize="large" style={{ /*background:"linear-gradient(to bottom, #833ab4, #fd1d1d, #fd1d8e)"*/ color:"#0077B5" }} />
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -92,7 +103,7 @@ const Index = () => {
                 </div>
             </div>
         </div>
-        <div className="footer__bottom">
+        <div className="footer__bottom special_color">
             <div className="container">
                 <div className="copyright__text"> 
                     © {new Date().getFullYear()} Shimma Hub. All Rights Reserved.

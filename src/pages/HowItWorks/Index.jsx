@@ -4,7 +4,8 @@ import excellence from "../../assets/images/excellence.svg"
 const HowItWorks = () => {
     const style1 = `#slcr_custom_heading_65105bf8707e2{ font-size: 13px;text-align: left;  letter-spacing: 1px; }`
     const style2 = `#slcr_custom_heading_65105bf870995{ font-size: 36px;line-height: 46px;text-align: center;  }`
-    const style3 = `#slcr_icon_last65105bf870c66.main__icon { text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #fba311 !important; background: #fba311 !important;  height: 80px; width: 80px; line-height: 80px; font-size: 40px; transition: all ease .3s; -webkit-transition: all ease .3s; } #slcr_icon_last65105bf870c66.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; }`
+    const style3 = `#slcr_icon_last65105bf870c66.main__icon { text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #5f9ea0 !important; background: #5f9ea0 !important;  height: 80px; width: 80px; line-height: 80px; font-size: 40px; transition: all ease .3s; -webkit-transition: all ease .3s; } #slcr_icon_last65105bf870c66.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; }`
+    // const style3 = `#slcr_icon_last65105bf870c66.main__icon { text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #fba311 !important; background: #fba311 !important;  height: 80px; width: 80px; line-height: 80px; font-size: 40px; transition: all ease .3s; -webkit-transition: all ease .3s; } #slcr_icon_last65105bf870c66.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; }`
     const style4 = `#slcr_custom_heading_65105bf870dd8{ font-size: 18px;line-height: 20px;text-align: center;  }`
     const style5 = `#slcr_custom_heading_65105bf870f1e{ font-size: 15px;color: rgba(255,255,255,0.7);line-height: 24px;text-align: center;  }`
     const style6 = `#slcr_icon_last65105bf8710eb.main__icon { text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #fba311 !important; background: #fba311 !important;  height: 80px; width: 80px; line-height: 80px; font-size: 35px; transition: all ease .3s; -webkit-transition: all ease .3s; } #slcr_icon_last65105bf8710eb.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; }`
@@ -13,9 +14,14 @@ const HowItWorks = () => {
     const style9 = `#slcr_icon_last65105bf871510.main__icon { text-align: center; color: #ffffff !important; border-radius: 50%; border-color: #fba311 !important; background: #fba311 !important;  height: 80px; width: 80px; line-height: 80px; font-size: 40px; transition: all ease .3s; -webkit-transition: all ease .3s; } #slcr_icon_last65105bf871510.main__icon:hover { background: #fba311 !important; border-color: #fba311 !important; color: #ffffff !important; }`
     const style10 = `#slcr_custom_heading_65105bf871644{ font-size: 18px;line-height: 20px;text-align: center;  }`
     const style11 = `#slcr_custom_heading_65105bf871774{ font-size: 15px;color: rgba(255,255,255,0.7);line-height: 24px;text-align: center;  }`
+    const style12 = `.special_color{
+        background: #49796b !important;
+    }`
   return (
-    <div data-vc-full-width="true" data-vc-full-width-init="true" className="main-component vc_row wpb_row vc_row-fluid content-light data-bg-color-65105bf870173 vc_custom_1639235945461 vc_row-has-fill row-z-index-65105bf870173" data-bg-overlay="8" data-bg-color-65105bf870173="8" >
-        <style></style>
+    <div data-vc-full-width="true" data-vc-full-width-init="true" className="special_color main-component vc_row wpb_row vc_row-fluid content-light data-bg-color-65105bf870173 vc_custom_1639235945461 vc_row-has-fill row-z-index-65105bf870173" data-bg-overlay="8" data-bg-color-65105bf870173="8" >
+        <style>
+            {style12}
+        </style>
         <div className="wpb_column vc_column_container content-dark vc_col-sm-12 column-z-index-65105bf870318">
             <div className="vc_column-inner vc_custom_1575804426035">
             {/* wpb_wrapper */}
@@ -41,7 +47,8 @@ const HowItWorks = () => {
                                     <div className="icon__container vc_custom_1556173531552  " data-icon-align="center" data-hover-target="icon"> 
                                     {/* <i className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66">
                                     </i> */}
-                                    <StarOutline className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66" sx={{ padding: '1rem' }} />
+                                    <StarOutline className="main__icon icon-wiping-woman-head" id="slcr_icon_last65105bf870c66" sx={{ padding: '1rem'
+                                     }} />
                                 </div>
                                 <style>{style4}</style>
                                 <h4 id="slcr_custom_heading_65105bf870dd8" className="vc_custom_heading font-600">Excellence</h4>
@@ -59,7 +66,7 @@ const HowItWorks = () => {
                                 <div className="">
                                     <div className="icon__container vc_custom_1556005556725  " data-icon-align="center" data-hover-target="icon"> 
                                     {/* <i className="main__icon fa fa-calendar" id="slcr_icon_last65105bf8710eb"></i> */}
-                                    <CenterFocusStrongOutlined className="main__icon fa fa-calendar" id="slcr_icon_last65105bf8710eb" sx={{ padding: '1rem' }} />
+                                    <CenterFocusStrongOutlined className="main__icon fa fa-calendar" id="slcr_icon_last65105bf870c66" sx={{ padding: '1rem' }} />
                                     </div>
                                     <style>{style7}</style>
                                     <h4 id="slcr_custom_heading_65105bf871231" className="vc_custom_heading font-600">Customer-Centric Focus</h4>
@@ -77,7 +84,7 @@ const HowItWorks = () => {
                                 <div className="">
                                     <div className="icon__container vc_custom_1556001630671  " data-icon-align="center" data-hover-target="icon"> 
                                         {/* <i className="main__icon icon-leaves" id="slcr_icon_last65105bf871510"></i> */}
-                                        <LockOutlined className="main__icon icon-leaves" id="slcr_icon_last65105bf871510" sx={{ padding: '1rem' }} />
+                                        <LockOutlined className="main__icon icon-leaves" id="slcr_icon_last65105bf870c66" sx={{ padding: '1rem' }} />
                                     </div>
                                     <style>{style10}</style>
                                     <h4 id="slcr_custom_heading_65105bf871644" className="vc_custom_heading font-600">Integrity</h4>

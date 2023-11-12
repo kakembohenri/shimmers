@@ -1,4 +1,4 @@
-import { CloseOutlined, ExpandLessOutlined, ExpandMore, ExpandMoreOutlined, AccessTimeOutlined, Facebook, Instagram, MailOutlineOutlined, PhoneOutlined, Twitter, WatchOutlined } from "@mui/icons-material"
+import { CloseOutlined, ExpandLessOutlined, ExpandMore, ExpandMoreOutlined, AccessTimeOutlined, Facebook, Instagram, MailOutlineOutlined, PhoneOutlined, Twitter, WatchOutlined, LinkedIn } from "@mui/icons-material"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
@@ -6,7 +6,7 @@ const SideBar = ({setIsMobile}) => {
     // className={isMobile ? 'nav__mobile in-action':'nav__mobile' }
     const [showOptions, setShowOptions] = useState(false)
   return (
-    <aside className='nav__mobile in-action'>
+    <aside className='nav__mobile in-action' style={{ background: "#a0d6b4" }}>
     <div className="nav__close" onClick={() => setIsMobile(false)}> 
         <CloseOutlined fontSize="large" />
     </div>
@@ -76,21 +76,26 @@ const SideBar = ({setIsMobile}) => {
         </div>
         <div className="nav__module_side social">
             <ul className="social__side_mob">
-                <li> 
-                    <Link to="#" target="_blank">
-                        <Facebook fontSize="large" />
-                    </Link>
-                </li>
-                <li> 
-                    <Link to="#" target="_blank">
-                        <Twitter fontSize="large" />
-                    </Link>
-                </li>
-                <li> 
-                    <Link to="#" target="_blank">
-                        <Instagram fontSize="large" />
-                    </Link>
-                </li>
+            <li> 
+                <Link to="#" target="_blank">
+                    <Facebook fontSize="large" style={{ color:"#1877F2" }} />
+                </Link>
+            </li>
+            <li> 
+                <Link to="#" target="_blank">
+                    <Twitter fontSize="large" style={{ color:" #1DA1F2" }} />
+                </Link>
+            </li>
+            <li> 
+                <Link to="#" target="_blank">
+                    <Instagram fontSize="large" style={{ /*background:"linear-gradient(to bottom, #833ab4, #fd1d1d, #fd1d8e)"*/ color:"rgb(253, 29, 142)" }} />
+                </Link>
+            </li>
+            <li> 
+                <Link to="#" target="_blank">
+                    <LinkedIn fontSize="large" style={{ /*background:"linear-gradient(to bottom, #833ab4, #fd1d1d, #fd1d8e)"*/ color:"#0077B5" }} />
+                </Link>
+            </li>
             </ul>
         </div>
     </div>
