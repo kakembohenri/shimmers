@@ -8,10 +8,15 @@ const Mission = () => {
     const style3 = `#slcr_custom_heading_65105bf86c50b{ font-size: 36px;line-height: 48px;text-align: left;  }`
     const style4 = `#slcr_custom_heading_65105bf86c65d{ text-align: left;  }`
     const style5 = `#slcr_custom_heading_65105bf86cbeb{ line-height: 1;text-align: center;  }`
+    const style6 = `@media screen and (max-width: 575.98px) {
+        img {
+          height: 14rem !important;
+        }
+      }`
   return (
     <Box sx={{ flexDirection: {lg: 'row',md: 'column', sm: 'column', xs: 'column'}}} className="main-component flex-container vc_row wpb_row vc_row-fluid content-dark data-bg-color-65105bf86c0d2 vc_custom_1556211578092 row-z-index-65105bf86c0d2">
         <style>{style1}</style>
-        <style></style>
+        <style>{style6}</style>
         <Box sx={{ width:{md: '100%', sm: '100%', xs:'100%'} }} className="wpb_column vc_column_container content-dark vc_col-sm-6 column-z-index-65105bf86c1d8">
             <div className="vc_column-inner vc_custom_1555946720709">
                 <div className="wpb_wrapper">
