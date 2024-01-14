@@ -22,13 +22,16 @@ const NavbarSecondary = () => {
     }
 
     const active = {
-        background: "#a3c1ad",
-        borderBottom: "#a3c1ad",
+        background: "#1e2367",
+        borderBottom: "#1e2367",
         position: "fixed",
         zIndex: "1000"
     }
+    // Old colors
+    // background:"#a3c1ad"
+    // borderBottom:"#a3c1ad"
   return (
-    <div className="header__secondary hidden-xs hidden-sm" style={ show ? active: {background:"#a3c1ad", borderBottom:"#a3c1ad" }}>
+    <div className="header__secondary hidden-xs hidden-sm" style={ show ? active: {background:"#1e2367", borderBottom:"#1e2367" }}>
         <style>{`
         .link-secondary{
             display: flex !important;
@@ -42,13 +45,13 @@ const NavbarSecondary = () => {
                             <div className="inner__wrap text__block">
                                 <div className="top__content">
                                     <ul style={{ display: 'flex' }} className="top-bar-content">
-                                        <li className="link-secondary" style={{ color:"#49796b" }}>
+                                        <li className="link-secondary" style={{ color:"#fff" }}>
                                             <PhoneOutlined fontSize="large" /> +(256) 743 363 774
                                         </li>
-                                        <li className="link-secondary" style={{ color:"#49796b" }}>
+                                        <li className="link-secondary" style={{ color:"#fff" }}>
                                             <AccessTimeOutlined fontSize="large" /> Mon - Fri: 9:00 - 19:00 / Closed on Weekends
                                         </li>
-                                        <li className="link-secondary" style={{ color:"#49796b" }}>
+                                        <li className="link-secondary" style={{ color:"#fff" }}>
                                             <MailOutlineOutlined fontSize="large" /> Shimahub95@gmail.com
                                         </li>
                                     </ul>
