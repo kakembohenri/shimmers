@@ -4,8 +4,11 @@ import logo from "../../assets/images/logo.jpg"
 
 const Index = () => {
     const style=`.special_color{
-        background-color: #a3c1ad !important;
+        background-color: #1e2367 !important;
     }`
+    // const style=`.special_color{
+    //     background-color: #a3c1ad !important;
+    // }`
   return (
     <footer className="footer__cont slcr-sidebar col__4 col__alternate " data-footer-layout="first" data-widget-align="center" data-social-location="default" data-bg-overlay="0" data-footer-scheme="dark">
         <style>
