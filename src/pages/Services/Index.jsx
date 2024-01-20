@@ -4,6 +4,7 @@ import commercial from "../../assets/images/commercial.jpg"
 import laundry from "../../assets/images/laundry.jpg"
 import sofa from "../../assets/images/sofa.jpg"
 import residential from "../../assets/images/residential.jpg"
+import { Link } from "react-router-dom"
 
 const Index = () => {
     const style1 = `#slcr_custom_heading_65197de838211{ font-size: 13px;text-align: left;  letter-spacing: 1px; }`
@@ -48,18 +49,18 @@ const Index = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="wpb_column vc_column_container vc_col-sm-3">
+                    <div className="wpb_column vc_column_container vc_col-sm-3">
                         <div className="vc_column-inner">
                             <div className="wpb_wrapper">
                                 <style>{style4}</style>
                                 <div className="vc_btn3-container vc_btn3-right"> 
-                                    <a href="#" id="btn_slcr_65197de838ba4" className="btn   vc_custom_1556202625078  btn--lg font-700 btn--rounded btn-shadow btn--primary     btn--full-xs "> 
+                                    <Link to="/services/all" id="btn_slcr_65197de838ba4" className="btn   vc_custom_1556202625078  btn--lg font-700 btn--rounded btn-shadow btn--primary     btn--full-xs " style={{ background:"#1e2367" }}> 
                                     <span>MORE SERVICES</span> 
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
                 <div className="vc_row wpb_row vc_inner vc_row-fluid">
                     <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6 vc_col-xs-12">

@@ -50,10 +50,12 @@ const BriefIntro = () => {
                         <style>
                             {style3}
                         </style>
-                        <div className="vc_btn3-container vc_btn3-left"> 
-                            <a href="#" id="btn_slcr_650ee07e19da7" className="btn   vc_custom_1555927878202  btn--lg font-700 btn--rounded    btn-shadow  btn--secondary  btn--icon-simple " style={{ background:"#00f5ff" }}>      <span>REQUEST A DEMO</span><i className="vc_btn3-icon fa fa-arrow-right slcr_icon_html_last_css_650ee07e19d9d"></i> 
+                        {/* <div className="vc_btn3-container vc_btn3-left"> 
+                            <a href="#" id="btn_slcr_650ee07e19da7" className="btn   vc_custom_1555927878202  btn--lg font-700 btn--rounded    btn-shadow  btn--secondary  btn--icon-simple " style={{ background:"#00f5ff" }}>      
+                            <span>REQUEST A DEMO</span>
+                            <i className="vc_btn3-icon fa fa-arrow-right slcr_icon_html_last_css_650ee07e19d9d"></i> 
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

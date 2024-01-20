@@ -13,8 +13,19 @@ const NavbarPrimary = ({setIsMobile}) => {
     const handleMouseLeave = () => {
         setIsDropDownVisible(false)
     }
+
+    const currentPath = window.location.href.split("/").slice(-1)[0];
+
+   const style = `
+    .active_link{
+        color: #fff !important;
+    }
+   `
   return (
     <div className="header__primary" style={{ background: "#5f9ea0" }} id="back">
+        <style>
+            {style}
+        </style>
         <div className="wrap">
             <div className="container">
                 <div className="nav__logo"> 
@@ -33,19 +44,19 @@ const NavbarPrimary = ({setIsMobile}) => {
                     <nav className="nav__container hidden-xs hidden-sm custom-navbar">
                         <ul className=" nav__list nav-list_alt">
                             <li id="menu-item-707" className="nav_link nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-548 link__active">
-                                <Link to="/home" className="mouseover__call">
+                                <Link to="/home" className={currentPath.includes('home') ? "active_link mouseover__call":"mouseover__call"}>
                                     <span className="inner__item">Home </span>
                                 </Link>
                             </li>
                             <li id="menu-item-548" className="nav_link nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-548 link__active">
-                                <Link to="/about" className="mouseover__call">
+                                <Link to="/about" className={currentPath.includes('about') ? "active_link mouseover__call":"mouseover__call"}>
                                     <span className="inner__item">About</span>
                                 </Link>
                             </li>
                             <li id="menu-item-9" className="services_link nav_link nav__item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-9 link__active" onMouseLeave={() => handleMouseLeave()}>
                                 <Link 
                                     to="#" 
-                                    className="mouseover__call" 
+                                    className={currentPath.includes('all') ? "active_link mouseover__call":"mouseover__call"} 
                                     onMouseEnter={() => handleMouseEnter()}
                                     >
                                     <span className="inner__item">Services </span>
@@ -73,11 +84,14 @@ const NavbarPrimary = ({setIsMobile}) => {
                                         <Link to="/services/furniture-cleaning" className="child__hover">Furniture Cleaning</Link>
                                 </li>
                             </ul>
-                        </li>
-                        <li id="menu-item-546" className="nav_link nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-546 link__active">
-                            <Link to="/contacts" className="mouseover__call"><span className="inner__item">Contact</span></Link>
-                        </li>
-                    </ul>
+                            </li>
+                            <li id="menu-item-546" className="nav_link nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-546 link__active">
+                                <Link to="/contacts" className={currentPath.includes('contacts') ? "active_link mouseover__call":"mouseover__call"}><span className="inner__item">Contact</span></Link>
+                            </li>
+                            <li id="menu-item-546" className="nav_link nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-546 link__active">
+                                <Link to="/careers" className={currentPath.includes('careers') ? "active_link mouseover__call":"mouseover__call"}><span className="inner__item">Careers</span></Link>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </div>

@@ -5,6 +5,17 @@ import { Link } from "react-router-dom"
 const SideBar = ({setIsMobile}) => {
     // className={isMobile ? 'nav__mobile in-action':'nav__mobile' }
     const [showOptions, setShowOptions] = useState(false)
+
+    const [isDropDownVisible, setIsDropDownVisible] = useState(false)
+
+    const handleMouseEnter = () => {
+        setIsDropDownVisible(true)
+    }
+    const handleMouseLeave = () => {
+        setIsDropDownVisible(false)
+    }
+
+
   return (
     <aside className='nav__mobile in-action' style={{ background: "#a0d6b4" }}>
     <div className="nav__close" onClick={() => setIsMobile(false)}> 
@@ -14,20 +25,28 @@ const SideBar = ({setIsMobile}) => {
         <div className="nav__module_side">
             <ul className="nav__mobile_list">
                 <li id="mobile-menu-item-707" className="nav__mobile_item  parent__menu ">
-                    <Link to="#" className="" >Home </Link>
+                    <Link to="/home" className="" >Home </Link>
                 </li>
                 <li id="mobile-menu-item-548" className="nav__mobile_item  parent__menu ">
                     <Link to="/about">About</Link>
                 </li>
-                <li id="mobile-menu-item-9" className="nav__mobile_item  parent__menu ">
-                    <a title="Services" href="#" className="" data-toggle="dropdown">
-                        Services 
-                        {showOptions ? 
-                            <ExpandLessOutlined onClick={() => setShowOptions(false)} />
-                            :
-                            <ExpandMoreOutlined onClick={() => setShowOptions(true)} />
-                        }
-                    </a>
+                <li id="mobile-menu-item-9" className="nav__mobile_item  parent__menu " 
+                onClick={() => setShowOptions((prev) => !prev)}
+                >
+                    <Link 
+                        to="#" 
+                        className="mouseover__call" 
+                        onClick={() => setShowOptions((prev) => !prev)}
+                        >
+                            <span>
+                                Services 
+                                {showOptions ? 
+                                    <ExpandLessOutlined onClick={() => setShowOptions(false)} />
+                                    :
+                                    <ExpandMoreOutlined onClick={() => setShowOptions(true)} />
+                                }
+                            </span>
+                    </Link>
                     {showOptions && (
                         <ul className="nav__mobile_list  sub-menu child   depth_0 open-submenu">
                             <li id="mobile-menu-item-547" className="nav__mobile_item ">
@@ -55,20 +74,23 @@ const SideBar = ({setIsMobile}) => {
                     )}
                 </li>
                 <li id="mobile-menu-item-546" className="nav__mobile_item  parent__menu ">
-                    <a title="Contact" href="http://www.slashcreative.co/themes/moppers-version-2/contact/">Contact</a>
+                    <Link title="Contact" to="/contacts">Contact</Link>
+                </li>
+                <li id="mobile-menu-item-546" className="nav__mobile_item  parent__menu ">
+                    <Link title="Contact" to="/careers">Careers</Link>
                 </li>
             </ul>
         </div>
         <div className="nav__module_side sec__links">
             <div className="text__mob_side">
                 <ul className="top-bar-content">
-                    <li>
+                    <li className="link-secondary">
                         <PhoneOutlined fontSize="large" />+(256) 743 363 774
                     </li>
-                    <li>
+                    <li className="link-secondary">
                         <AccessTimeOutlined fontSize="large" />Mon - Fri: 9:00 - 19:00 / Closed on Weekends
                     </li>
-                    <li>
+                    <li className="link-secondary">
                         <MailOutlineOutlined fontSize="large" />Shimahub95@gmail.com
                     </li>
                 </ul>
