@@ -3,12 +3,20 @@ import { Link } from "react-router-dom"
 import logo from "../../assets/images/logo.jpg"
 
 const Index = () => {
-    const style=`.special_color{
+    const style=`
+    .special_color{
         background-color: #1e2367 !important;
-    }`
+    }
+    
+    .footer-link{
+        text-decoration: underline;
+    }
+    `
     // const style=`.special_color{
     //     background-color: #a3c1ad !important;
     // }`
+    const currentPath = window.location.href.split("/").slice(-1)[0];
+
   return (
     <footer className="footer__cont slcr-sidebar col__4 col__alternate " data-footer-layout="first" data-widget-align="center" data-social-location="default" data-bg-overlay="0" data-footer-scheme="dark">
         <style>
@@ -17,7 +25,7 @@ const Index = () => {
         <div className="footer__main special_color">
             <div className="container no-padding">
                 <div className="widget__area">
-                    <div className="widget__wrap">
+                    <div className="footer-widgets widget__wrap">
                         <div className="footer__logo"> 
                             {/* <noscript>
                                 <img src="http://www.slashcreative.co/themes/moppers-version-2/wp-content/themes/moppers/assets/images/icons/slcr-logo-footer.svg" alt="logo" />
@@ -53,22 +61,28 @@ const Index = () => {
                     </div>
                 </div>
                 <div className="widget__area">
-                    <div className="widget__wrap">
+                    <div className="footer-widgets widget__wrap">
                         <div id="nav_menu-2" className="widget-content widget widget_nav_menu">
                             <h3 className="widget-title">Pages</h3>
                             <div className="menu-footer-pages-container">
                                 <ul id="menu-footer-pages" className="menu">
-                                    <li id="menu-item-493" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-493">
-                                        <Link to="#">Home</Link>
+                                    <li id="menu-item-493" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-493">
+                                        <Link to="/home" className={currentPath.includes('home') ? "footer-link ":""}>Home</Link>
                                     </li>
+                                    {/* <li id="menu-item-493" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-493">
+                                        <Link to="/home" className={currentPath.includes('home') ? "footer-link ":""}>Home</Link>
+                                    </li> */}
                                     <li id="menu-item-492" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-492">
-                                        <Link to="/about">About</Link>
+                                        <Link to="/about" className={currentPath.includes('about') ? "footer-link ":""}>About</Link>
                                     </li>
                                     <li id="menu-item-491" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-491">
-                                        <Link to="/services">Services</Link>
+                                        <Link to="/services" className={currentPath.includes('all') ? "footer-link ":""}>Services</Link>
                                     </li>
                                     <li id="menu-item-490" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-490">
-                                        <Link to="contact/">Contact</Link>
+                                        <Link to="/contacts" className={currentPath.includes('contacts') ? "footer-link ":""}>Contact</Link>
+                                    </li>
+                                    <li id="menu-item-490" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-490">
+                                        <Link to="/careers" className={currentPath.includes('careers') ? "footer-link":""}>Careers</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -76,7 +90,7 @@ const Index = () => {
                     </div>
                 </div>
                 <div className="widget__area">
-                    <div className="widget__wrap">
+                    <div className="footer-widgets widget__wrap">
                         <div id="nav_menu-3" className="widget-content widget widget_nav_menu">
                             <h3 className="widget-title">Services</h3>
                             <div className="menu-menu-sidebar-container">

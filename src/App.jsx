@@ -7,12 +7,13 @@ function App() {
   const Service = React.lazy(() => import("../src/pages/Service/Index"))
   const Contacts = React.lazy(() => import("../src/pages/Contacts/Index"))
   const About = React.lazy(() => import("../src/pages/About/Index"))
+  const Careers = React.lazy(() => import("../src/pages/Careers/Index"))
 
   const Loader = () => {
     return (
       <div className="load__wrapper" data-preloader-position="center" > 
         <svg className="loading__page" viewBox="25 25 50 50" > 
-            <circle className="path" cx="50" cy="50" r="20" fill="none" stroke-width="2"></circle> 
+            <circle className="path" cx="50" cy="50" r="20" fill="none" strokeWidth="2"></circle> 
         </svg>
       </div>
     )
@@ -38,6 +39,10 @@ function App() {
     {
       path:'/about',
       element:<About />
+    },
+    {
+      path:'/careers',
+      element:<Careers />
     },
   ])
 
